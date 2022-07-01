@@ -34,6 +34,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Chat.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -69,6 +72,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MVVM\ViewModel\MainViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -98,9 +102,11 @@
     <Folder Include="Core\" />
     <Folder Include="Icons\" />
     <Folder Include="MVVM\Model\" />
-    <Folder Include="MVVM\ViewModel\" />
     <Folder Include="MVVM\View\" />
     <Folder Include="Theme\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Chat.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
