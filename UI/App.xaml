@@ -4,6 +4,12 @@
              xmlns:local="clr-namespace:UI"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="./Theme/ContactCard.xaml" />
+                <ResourceDictionary Source="./Theme/ChatItem.xaml" />
+                <ResourceDictionary Source="./Theme/MessageBox.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>
